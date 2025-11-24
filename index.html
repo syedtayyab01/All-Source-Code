@@ -134,22 +134,17 @@
 
     <!-- CONTACT -->
 
-  <section id="contact" class="fade-in">
-    <h2>Contact</h2>
-    <p>Let’s collaborate or discuss a project! Fill out the form below 👇</p>
-    <form class="contact-form" onsubmit="event.preventDefault(); alert('Message Sent!');">
-      <input type="text" placeholder="Your Name" required />
-      <input type="email" placeholder="Your Email" required />
-      <textarea rows="5" placeholder="Your Message" required></textarea>
-      <button type="submit">Send Message</button>
-    </form>
+  <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
 
- <div class="socials">
-      <a href="https://wa.link/2kcu9o" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
-      <a href="https://www.linkedin.com/me?trk=p_mwlite_feed-secondary_nav" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-      <a href="https://www.instagram.com/trendvaultus1" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-      <a href="contact.syedtayyab@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
-  </section>
+    <!-- NEW Web3Forms API Key -->
+    <input type="hidden" name="access_key" value="8e0072ec-d730-4cae-acd4-27b86bbf8fa2">
+
+    <input type="text" name="name" placeholder="Your Name" required />
+    <input type="email" name="email" placeholder="Your Email" required />
+    <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+
+    <button type="submit">Send Message</button>
+</form>
 
   <footer>© 2024 SYED TAYYAB. All rights reserved.</footer>
 
@@ -228,3 +223,4 @@
 
 </body>
 </html>
+
